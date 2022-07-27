@@ -1,0 +1,107 @@
+tproxy-port: 9898
+mode: 'rule' 
+allow-lan: true
+unified-delay: true
+bind-address: "*"
+log-level: silent
+ipv6: false
+geodata-mode: false
+external-controller: 0.0.0.0:9090
+external-ui: dashboard
+tcp-concurrent: false
+secret: ""
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 28.0.0.0/8
+  use-hosts: true
+  fake-ip-filter: []
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+  fallback: []
+  fallback-filter:
+    geoip: false 
+    geoip-code: 'ID'
+    geosite: []
+    domain: []
+    ipcidr: []
+tun:
+  enable: false
+  stack: system
+  dns-hijack: ['any:53', 'tcp://any:53']
+  auto-route: false
+  auto-detect-interface: false
+sniffer:
+  enable: false
+  sniffing:
+    - tls
+    - http
+  port-whitelist: []
+  skip-domain: []
+  force-domain: []
+iptables: {enable: false, inbound-interface: "lo", bypass: []}
+interface-name: ""
+enable-process: false
+profile: {store-selected: true, store-fake-ip: false}
+
+proxies:
+# Config XL
+proxy-groups:
+  - name: Servers
+    type: select
+    proxies:
+      - Main Server
+      - SG Server
+      - ID Server
+  - name: Main Server
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "1. Main Server"
+  - name: SG Server
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "2. SG Server"
+  - name: ID Server
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - "3. ID Server"
+proxy-providers:
+  "1. Main Server":
+    type: http
+    url: ""
+    interval: 3600
+    path: ./main_server.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  "2. SG Server":
+    type: http
+    url: ""
+    interval: 3600
+    path: ./lb_sg.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  "3. ID Server":
+    type: http
+    url: ""
+    interval: 3600
+    path: ./lb_id.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+rules:
+  - MATCH,Servers
