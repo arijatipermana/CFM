@@ -78,7 +78,7 @@ proxy-groups:
 proxy-providers:
   "1. Main Server":
     type: http
-    url: ""
+    url: "https://raw.githubusercontent.com/arijatipermana/CFM/main/proxy_provider/main_server.yaml"
     interval: 3600
     path: ./main_server.yaml
     health-check:
@@ -87,7 +87,7 @@ proxy-providers:
       interval: 300
   "2. SG Server":
     type: http
-    url: ""
+    url: "https://raw.githubusercontent.com/arijatipermana/CFM/main/proxy_provider/lb_sg.yaml"
     interval: 3600
     path: ./lb_sg.yaml
     health-check:
@@ -96,7 +96,7 @@ proxy-providers:
       interval: 300
   "3. ID Server":
     type: http
-    url: ""
+    url: "https://raw.githubusercontent.com/arijatipermana/CFM/main/proxy_provider/lb_id.yaml"
     interval: 3600
     path: ./lb_id.yaml
     health-check:
