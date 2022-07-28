@@ -120,12 +120,3 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-
-  - name: ID JG - 04.08
-    server: id1tro.ipservers.xyz
-    port: 443
-    type: trojan
-    password: jagoanssh-ksieks
-    skip-cert-verify: true
-    sni: "gz0.googleusercontent.com"
-    udp: true
