@@ -103,7 +103,16 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
-
+    
+  - name: SG LINODE HOWDY - 07.08
+    server: trojan3.udpgw.com
+    port: 443
+    type: trojan
+    password: 40b6c9a0-0f98-11ed-80bf-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+    
   - name: SG OVH - 03.08
     server: sgv-2.openv2ray.com
     port: 443
@@ -117,23 +126,6 @@ proxies:
     network: ws
     ws-opts:
       path: /u/opentunnel.net-klsa
-      headers:
-        Host: gz0.googleusercontent.com
-    udp: true
-    
-  - name: SG OVH - 25.08
-    server: sgm1ray.serverssh.net
-    port: 443
-    type: vmess
-    uuid: f04625d3-b861-430b-8071-308e6d483eb8
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gz0.googleusercontent.com
-    network: ws
-    ws-opts:
-      path: /serverssh.net
       headers:
         Host: gz0.googleusercontent.com
     udp: true
