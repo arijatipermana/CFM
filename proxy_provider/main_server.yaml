@@ -120,3 +120,35 @@ proxies:
       headers:
         Host: gz0.googleusercontent.com
     udp: true
+    
+  - name: SG OVH - 25.08
+    server: sgm1ray.serverssh.net
+    port: 443
+    type: vmess
+    uuid: f04625d3-b861-430b-8071-308e6d483eb8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: ws
+    ws-opts:
+      path: /serverssh.net
+      headers:
+        Host: gz0.googleusercontent.com
+    udp: true
+    
+  - name: SG OVH gRPC - 24.08
+    server: sgmgrpc.serverssh.us
+    port: 443
+    type: vmess
+    uuid: 489c06f9-29cc-49b3-8899-3383d3392192
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: gz0.googleusercontent.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
