@@ -1,5 +1,5 @@
 proxies:
-  - name: (XL Axiata) HE-1
+  - name: 🔵 HE-1
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
@@ -8,7 +8,7 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
         
-  - name: (XL Axiata) Linode
+  - name: 🔵 Linode
     server: v2ray1.udpgw.com
     port: 443
     type: vmess
