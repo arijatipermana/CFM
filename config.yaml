@@ -5,8 +5,6 @@ proxy-groups:
     type: select
     proxies:
       - Main Server
-      - XL Axiata
-      - Telkomsel
   - name: Main Server
     type: select
     url: http://www.gstatic.com/generate_204
