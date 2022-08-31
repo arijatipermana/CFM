@@ -8,6 +8,15 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
+  - name: 🔵 ID Herza
+    server: idtj-herza.bonds.id
+    port: 443
+    type: trojan
+    password: 60c64fc0-2980-11ed-8726-1239d0255272
+    skip-cert-verify: true
+    sni: gz0.googleusercontent.com
+    udp: true
+    
   # Weekly
   - name: 🔵 ID Biznet - 07.09
     server: id-lb.vhax.net
@@ -91,6 +100,20 @@ proxies:
       path: ws://api.midtrans.com/howdy
       headers:
         Host: sg1-trojan.bonds.id
+    udp: true
+    
+  - name: 🔴 ID Herza
+    server: 104.17.2.81
+    port: 443
+    type: trojan
+    password: 92746a10-2980-11ed-9a8c-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: idtj-herza.bonds.id
     udp: true
 
   # Weekly
