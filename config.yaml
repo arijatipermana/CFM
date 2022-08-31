@@ -29,22 +29,28 @@ proxy-groups:
       - "3. Telkomsel"
 proxy-providers:
   "1. Main Server":
-    type: file
-    path: /data/adb/clash/switch/mido/main_server.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/main_server.yaml"
+    interval: 3600
+    path: ./proxy_provider/main_server.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
   "2. XL Axiata":
-    type: file
-    path: /data/adb/clash/switch/mido/xl_axiata.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/xl_axiata.yaml"
+    interval: 3600
+    path: ./proxy_provider/xl_axiata.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
   "3. Telkomsel":
-    type: file
-    path: /data/adb/clash/switch/mido/telkomsel.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/telkomsel.yaml"
+    interval: 3600
+    path: ./proxy_provider/telkomsel.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
