@@ -30,7 +30,7 @@ proxy-groups:
 proxy-providers:
   "1. Main Server":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/main_server.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/CFM/main/proxy_provider/main_server.yaml"
     interval: 3600
     path: ./proxy_provider/main_server.yaml
     health-check:
@@ -39,7 +39,7 @@ proxy-providers:
       interval: 300
   "2. XL Axiata":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/xl_axiata.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/CFM/main/proxy_provider/xl_axiata.yaml"
     interval: 3600
     path: ./proxy_provider/xl_axiata.yaml
     health-check:
@@ -48,7 +48,7 @@ proxy-providers:
       interval: 300
   "3. Telkomsel":
     type: http
-    url: "https://raw.githubusercontent.com/arijatipermana/VPN/main/proxy_provider/telkomsel.yaml"
+    url: "https://raw.githubusercontent.com/arijatipermana/CFM/main/proxy_provider/telkomsel.yaml"
     interval: 3600
     path: ./proxy_provider/telkomsel.yaml
     health-check:
