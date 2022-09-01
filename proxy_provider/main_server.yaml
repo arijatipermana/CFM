@@ -1,5 +1,5 @@
 proxies:
-  - name: 🟦 SG HE
+  - name: 🟦 SG HE-1
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
@@ -88,7 +88,7 @@ proxies:
 
 
   ### Telkomsel ###    
-  - name: 🟥 SG HE
+  - name: 🟥 SG HE-1
     server: 104.17.2.81
     port: 443
     type: trojan
@@ -102,18 +102,18 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
     
-  - name: 🟥 ID IKD
+  - name: 🟥 ID Herza
     server: 104.17.2.81
     port: 443
     type: trojan
-    password: bbade5c0-299f-11ed-9fe7-1239d0255272
+    password: 60c64fc0-2980-11ed-8726-1239d0255272
     skip-cert-verify: true
     sni: api.midtrans.com
     network: ws
     ws-opts:
       path: ws://api.midtrans.com/howdy
       headers:
-        Host: idtj-ikd.bonds.id
+        Host: idtj-herza.bonds.id
     udp: true
     
   # Weekly
