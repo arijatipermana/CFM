@@ -1,18 +1,4 @@
 proxies:
-  - name: 🟥 HE-1
-    server: 104.17.2.81
-    port: 443
-    type: trojan
-    password: 9a385640-21c1-11ed-9fa5-1239d0255272
-    skip-cert-verify: true
-    sni: api.midtrans.com
-    network: ws
-    ws-opts:
-      path: ws://api.midtrans.com/howdy
-      headers:
-        Host: sg1-trojan.bonds.id
-    udp: true
-    
   - name: 🟥 Linode
     server: 104.17.2.81
     port: 443
@@ -28,4 +14,38 @@ proxies:
       path: ws://api.midtrans.com/howdy
       headers:
         Host: v2ray1.udpgw.com
+    udp: true
+    
+  - name: 🟥 AMP
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: wss://api.midtrans.com/fastssh/jshshwb/6310b9a0d7db7/
+      headers:
+        Host: sg-atha.v2-ray.com
+    udp: true
+    
+  - name: 🟥 OVH
+    server: 104.17.3.81
+    port: 443
+    type: vmess
+    uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: wss://api.midtrans.com/fastssh/jsjjsb/6310b9cb30a36/
+      headers:
+        Host: sg-ovh2.v2-ray.com
     udp: true
