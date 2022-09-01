@@ -119,7 +119,7 @@ proxies:
         Host: id-herza.v2-ray.com
     udp: true
     
-  - name: 🟥 ID IKD - 07.09s
+  - name: 🟥 ID IKD - 07.09
     server: 104.17.2.81
     port: 443
     type: vmess
