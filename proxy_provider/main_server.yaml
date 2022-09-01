@@ -102,38 +102,18 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
     
-  - name: 🟥 ID Herza - 07.09
+  - name: 🟥 ID IKD
     server: 104.17.2.81
     port: 443
-    type: vmess
-    uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: bbade5c0-299f-11ed-9fe7-1239d0255272
     skip-cert-verify: true
-    servername: api.midtrans.com
+    sni: api.midtrans.com
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/fastssh/sjejen/63101af6ab083
+      path: ws://api.midtrans.com/howdy
       headers:
-        Host: id-herza.v2-ray.com
-    udp: true
-    
-  - name: 🟥 ID IKD - 07.09
-    server: 104.17.2.81
-    port: 443
-    type: vmess
-    uuid: ff382d09-becd-41cb-8e4f-3e256b27de47
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: api.midtrans.com
-    network: ws
-    ws-opts:
-      path: ws://api.midtrans.com/sshkit/sjkda/631013ee32284/
-      headers:
-        Host: id-ikd.v2-ray.com
+        Host: idtj-ikd.bonds.id
     udp: true
     
   # Weekly
