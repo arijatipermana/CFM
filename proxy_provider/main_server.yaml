@@ -106,7 +106,7 @@ proxies:
     server: 104.17.2.81
     port: 443
     type: vmess
-    uuid: f4f7252a-7100-48e7-a2e5-b0334e845c06
+    uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
     alterId: 0
     cipher: auto
     tls: true
@@ -114,7 +114,7 @@ proxies:
     servername: api.midtrans.com
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/sshkit/kjaksd/6310138d4a127/
+      path: ws://api.midtrans.com/fastssh/sjejen/63101af6ab083
       headers:
         Host: id-herza.v2-ray.com
     udp: true
