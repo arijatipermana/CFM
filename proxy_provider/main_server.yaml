@@ -1,5 +1,5 @@
 proxies:
-  - name: 🔵 SG HE
+  - name: 🟦 SG HE
     server: sg1-trojan.bonds.id
     port: 443
     type: trojan
@@ -8,7 +8,7 @@ proxies:
     sni: gz0.googleusercontent.com
     udp: true
     
-  - name: 🔵 ID Herza
+  - name: 🟦 ID Herza
     server: idtj-herza.bonds.id
     port: 443
     type: trojan
@@ -18,7 +18,7 @@ proxies:
     udp: true
     
   # Weekly
-  - name: 🔵 ID Biznet - 07.09
+  - name: 🟦 ID Biznet - 07.09
     server: id-lb.vhax.net
     port: 443
     type: vmess
@@ -35,7 +35,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: 🔵 SG OVH - 07.09
+  - name: 🟦 SG OVH - 07.09
     server: sg-lb.vhax.net
     port: 443
     type: vmess
@@ -52,7 +52,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
     
-  - name: 🔵 SG AMP - 07.09
+  - name: 🟦 SG AMP - 07.09
     server: sg-atha.v2-ray.com
     port: 443
     type: vmess
@@ -69,7 +69,7 @@ proxies:
         Host: gz0.googleusercontent.com
     udp: true
 
-  - name: 🔵 SG Linode
+  - name: 🟦 SG Linode
     server: v2ray1.udpgw.com
     port: 443
     type: vmess
@@ -88,7 +88,7 @@ proxies:
 
 
   ### Telkomsel ###    
-  - name: 🔴 SG HE
+  - name: 🟥 SG HE
     server: 104.17.2.81
     port: 443
     type: trojan
@@ -102,7 +102,7 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
     
-  - name: 🔴 ID Herza
+  - name: 🟥 ID Herza
     server: 104.17.2.81
     port: 443
     type: trojan
@@ -117,7 +117,7 @@ proxies:
     udp: true
 
   # Weekly
-  - name: 🔴 ID Biznet - 07.09
+  - name: 🟥 ID Biznet - 07.09
     server: 104.17.2.81
     port: 443
     type: vmess
@@ -134,7 +134,7 @@ proxies:
         Host: id-lb.vhax.net
     udp: true
     
-  - name: 🔴 SG OVH - 07.09
+  - name: 🟥 SG OVH - 07.09
     server: 104.17.2.81
     port: 443
     type: vmess
@@ -151,7 +151,7 @@ proxies:
         Host: sg-lb.vhax.net
     udp: true
     
-  - name: 🔴 SG AMP - 07.09
+  - name: 🟥 SG AMP - 07.09
     server: 104.17.2.81
     port: 443
     type: vmess
@@ -168,7 +168,7 @@ proxies:
         Host: sg-atha.v2-ray.com
     udp: true
     
-  - name: 🔴 SG Linode
+  - name: 🟥 SG Linode
     server: 104.17.2.81
     port: 443
     type: vmess
