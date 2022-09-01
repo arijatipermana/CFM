@@ -4,23 +4,23 @@ proxy-groups:
   - name: Servers
     type: select
     proxies:
-      - Main Server
-      - XL Axiata
-      - Telkomsel
-  - name: Main Server
+      - ⬜️ Main Server
+      - 🟦 XL Axiata
+      - 🟥 Telkomsel
+  - name: ⬜️ Main Server
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "1. Main Server"
-  - name: XL Axiata
+  - name: 🟦 XL Axiata
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 300
     use:
       - "2. XL Axiata"
-  - name: Telkomsel
+  - name: 🟥 Telkomsel
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
