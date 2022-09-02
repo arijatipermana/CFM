@@ -32,3 +32,17 @@ proxies:
       headers:
         Host: sg-atha.v2-ray.com
     udp: true
+    
+  - name: 🟥 HE-1
+    server: 104.17.2.81
+    port: 443
+    type: trojan
+    password: c33d9210-2ab0-11ed-85b6-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: sg1-trojan.bonds.id
+    udp: true
