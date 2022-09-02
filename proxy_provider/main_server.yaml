@@ -15,15 +15,15 @@ proxies:
     udp: true
     
   - name: 🟥 SG UDPGW
-    server: 104.17.2.81
+    server: 104.18.20.18
     port: 443
     type: trojan
     password: 166ab330-2ab0-11ed-bd4a-1239d0255272
     skip-cert-verify: true
-    sni: api.midtrans.com
+    sni: corona.jakarta.go.id
     network: ws
     ws-opts:
-      path: ws://api.midtrans.com/howdy
+      path: ws://corona.jakarta.go.id/howdy
       headers:
         Host: sg8-trojan.bonds.id
     udp: true
