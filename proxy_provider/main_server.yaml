@@ -14,6 +14,20 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
     
+  - name: 🟥 SG UDPGW
+    server: 104.17.2.81
+    port: 443
+    type: trojan
+    password: 166ab330-2ab0-11ed-bd4a-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: sg8-trojan.bonds.id
+    udp: true
+    
 #   Weekly
   - name: 🟥 ID Biznet - 09.09
     server: 104.17.2.81
