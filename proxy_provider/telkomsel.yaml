@@ -32,20 +32,3 @@ proxies:
       headers:
         Host: sg-atha.v2-ray.com
     udp: true
-    
-  - name: 🟥 OVH
-    server: 104.17.3.81
-    port: 443
-    type: vmess
-    uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: api.midtrans.com
-    network: ws
-    ws-opts:
-      path: wss://api.midtrans.com/fastssh/jsjjsb/6310b9cb30a36/
-      headers:
-        Host: sg-ovh2.v2-ray.com
-    udp: true
